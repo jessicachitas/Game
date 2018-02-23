@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="Guessing-Game.css" rel="stylesheet">
+    <h1><center><font color="white">Number Guessing Game!</center></h1>
+</head>
+
+<body>
+    <body bgcolor="#94b8b8">
+    <p1><center>Enter a number into the box above!</center></p1>
+    <p2>Code used to make this:<br>
+ <pre>// 1. Declare the secret value<br>
+      var guess = <i>x</i><br>
+      var count = 3<br>
+      <br>
+      // 2. Have a user imput a value & 3. Tell user if this is higher/lower/equal to that secret value.<br>
+      function printNumber(guess) {<br>
+         while(count > 0 && guess != line){<br>
+           var line = window.prompt("Guess a Number...");<br>
+           console.log(line);<br>
+
+         if (line == guess) {<br>
+            window.alert("correct!");<br>
+            count = 0<br>
+         }<br>
+         else{<br>
+            window.alert("incorrect, try again :(");<br>
+            count--<br>
+        }<br>
+    }<br>
+}<br> 
+       printNumber(guess)<br></pre>
+    </p2></link></font>
+
+</body>
+
+<!-- Connecting to JavaScript -->
+<script src="Guessing-Game.js"></script>
+</html>
